@@ -1,0 +1,140 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    box-sizing: border-box;
+
+}
+
+body {
+background-image: url(background.webp);
+background-size: cover;
+padding: 0;
+margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 100Vh;
+width: 100Vw;
+}
+
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0,0,0,0.45);
+    backdrop-filter: blur(2.1px);
+    width: 280px;
+    height: 430px;
+    padding: 10px;
+    /* border-radius: 10px; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.87);
+    transition: .3s;
+    }
+
+.keyBlue {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: rgba(255,255,255,0.87);
+    width: 10px;
+    height: 10px;
+    margin: 1px; 
+    background-color: rgba(35,0,115,0.5);
+    transition: .3s;
+    font-size: 37px;
+    }
+
+#del {
+    font-size: 37px;
+}
+
+.keyColor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 10px;
+    height: 10px;
+    margin: 1px; 
+    background-color: rgba(0, 162, 185,0.5);
+    color: rgba(255,255,255,0.87);
+    transition: .3s;
+    }
+
+.key:hover {
+    background-color: rgba(205,205,205,0.3);
+    transition: .3s;
+}
+
+.keyBlue:hover {
+    background-color: rgb(105 70 185 / 50%);
+    transition: .3s;
+}
+.keyColor:hover {
+    background-color: rgb(50 255 235 / 45%);
+    transition: .3s;
+}
+
+
+[class*='key'] {
+    user-select: none;
+    cursor:pointer;
+}
+
+.result {
+display: flex;
+justify-content: right;
+align-items: center;
+overflow: hidden;
+    width: 246px;
+    height: 50px;
+    background-color: rgba(0, 162, 185,0.5);
+    
+padding: 5px;
+margin-bottom: 3px;
+}
+
+.result2 {
+display: flex;
+justify-content: right;
+align-items: center;
+overflow: hidden;
+    width: 246px;
+    height: 27px;
+    background-color: rgba(0, 162, 185,0.5);
+font-size: 20px;
+padding: 5px 5px 1px 5px;
+
+margin-top: 5px;
+}
+
+.resultCont {
+width: 246px;
+color: rgba(255,255,255,0.87);
+}
+
